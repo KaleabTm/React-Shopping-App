@@ -17,12 +17,17 @@ const cartSlice = createSlice({
         addToCart(state, action){
           state.changed=true
          const newItem = action.payload
-         // to check if the item is already available
+
          const existingItem = state.itemList.find((item)=> item.id===newItem.id)
+
        if(existingItem){
+
         existingItem.quantity++
         existingItem.totalPrice += newItem.price
-       }else{
+
+       }
+       else
+       {
         state.itemList.push({
             id: newItem.id,
             price: newItem.price,
