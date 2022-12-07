@@ -12,7 +12,9 @@ export const fetchData=()=>{
     try{
       const cartData= await fetchHandler();
       dispatch(cartActions.replaceData(cartData))
-    }catch(err){
+    }
+    catch(err)
+    {
         dispatch(uiActions.showNotification({
             open:true,
             message:'Sending Request failed',

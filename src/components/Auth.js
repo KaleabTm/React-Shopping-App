@@ -7,7 +7,6 @@ const Auth = () => {
   const dispatch = useDispatch()
   const handleSubmit =(e) =>{
     e.preventDefault();
-    //dispatch
     dispatch(authActions.login())
   }
   return (

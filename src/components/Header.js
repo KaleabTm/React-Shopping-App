@@ -5,7 +5,7 @@ import Cart from "./Cart";
 import "./Header.css";
 const Header = () => {
   const dispatch = useDispatch()
-  const logoutHandler =()=>{
+  const logOutHandler =()=>{
     dispatch(authActions.logout())
   }
   return (
@@ -24,7 +24,7 @@ const Header = () => {
             <Cart />
           </li>
           <li>
-            <button onClick={logoutHandler} className="logout-btn">Logout</button>
+            <button onClick={logOutHandler} className="logout-btn">Logout</button>
           </li>
         </ul>
       </nav>
