@@ -14,7 +14,9 @@
   padding: 10px;
   background: orangered;
   border: none;
+  color: rgb(65, 62, 62);
 }
 .logout-btn:hover{
   background: rgb(0,6,59);
+  color: blanchedalmond;
 }
